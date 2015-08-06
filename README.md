@@ -1,5 +1,5 @@
 # MeanApi
-A example application to demonstrate how Mongo, Express, and Node can be used together to create a simple RESTful API.  
+An application to demonstrate how Mongo, Express, and Node can be used together to create a simple RESTful API.  
 
 # Dependencies
 * Node.js  
