@@ -12,4 +12,8 @@ An application to demonstrate how Mongo, Express, and Node can be used together 
 # Usage
 * cd app
 * npm install  
-* node server.js  
+* node server.js
+* Verify the server is running @ http://localhost:8080/api/health
+
+# Example  
+* Access a resource @ http://localhost:8080/api/restaurants/40361322

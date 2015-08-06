@@ -18,8 +18,17 @@ router.get('/', function(req, res) {
     res.json({ message: 'MeanAPI' });
 });
 
-router.get('/status', function(req, res) {
-    res.json({ message: 'API is up and running' });
+router.get('/status', function(req, res){
+   res.json(
+       {
+           status: "Running",
+           serverUpTime: process.uptime() + " seconds",
+           processIdNum: process.pid,
+           memoryUsage: process.memoryUsage(),
+           platform: process.platform,
+           nodeVersion: process.version
+       }
+   );
 });
 
 router.route('/restaurants')
