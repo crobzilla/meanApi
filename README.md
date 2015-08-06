@@ -1,11 +1,10 @@
 # meanApi
 
-To get up and running:
+# Dependencies
+Node.js  
+Npm  
+MongoDB  
 
-Must have the following installed:  
-    node  
-    npm  
-
-Steps to run the Api:  
-    npm install  
-    node server.js  
+# Usage
+npm install  
+node server.js  
