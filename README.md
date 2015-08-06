@@ -10,5 +10,6 @@ A example application to demonstrate how Mongo, Express, and Node can be used to
   * mongoimport --db meanApi --collection restaurants --drop --file (pathToData.JsonFile)
 
 # Usage
+* cd app
 * npm install  
 * node server.js  
