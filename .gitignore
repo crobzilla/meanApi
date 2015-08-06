@@ -1,2 +1,2 @@
 # should be installed locally with the command 'npm install'
-app/node_modules/**
+app/node_modules/*
