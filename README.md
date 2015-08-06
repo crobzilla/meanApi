@@ -1,4 +1,4 @@
-# meanApi
+# MeanApi
 
 # Dependencies
 * Node.js  
