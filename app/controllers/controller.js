@@ -7,7 +7,6 @@ var Restaurant = require('./../models/Restaurant');
 var restaurantService = require('./../services/restaurantService');
 var router = express.Router();
 
-// middleware to use for all requests
 router.use(function(req, res, next) {
     // do logging
     // console.log(req);
@@ -25,7 +24,7 @@ router.get('/status', function(req, res) {
 
 router.route('/restaurants')
 
-    // create a bear (accessed at POST http://localhost:8080/api/restaurants)
+    // create a restaurant (accessed at POST http://localhost:8080/api/restaurants)
     .post(function(req, res) {
         restaurantService.createRestaurant(req.body).then(function(restaurant){
             res.json(restaurant);
@@ -34,7 +33,7 @@ router.route('/restaurants')
         });
     })
 
-    // get all the bears (accessed at GET http://localhost:8080/api/bears)
+    // get all the restaurants (accessed at GET http://localhost:8080/api/restaurants)
     .get(function(req, res) {
         restaurantService.getAllRestaurants().then(function(restaurants){
             res.json(restaurants);
@@ -45,7 +44,7 @@ router.route('/restaurants')
 
 router.route('/restaurants/:restaurant_id')
 
-    // get the bear with that id (accessed at GET http://localhost:8080/api/bears/:bear_id)
+    // get the restaurant with that id (accessed at GET http://localhost:8080/api/restaurants/:restaurant_id)
     .get(function(req, res) {
         restaurantService.getRestaurantById(req.params.restaurant_id).then(function(restaurant){
             res.json(restaurant);
@@ -54,7 +53,7 @@ router.route('/restaurants/:restaurant_id')
         });
     })
 
-    // update the bear with this id (accessed at PUT http://localhost:8080/api/bears/:bear_id)
+    // update the restaurant with this id (accessed at PUT http://localhost:8080/api/restaurants/:restaurant_id)
     .put(function(req, res) {
         restaurantService.updateRestaurant(req.params.restaurant_id, req.body).then(function(restaurant){
             res.json(restaurant);
@@ -63,7 +62,7 @@ router.route('/restaurants/:restaurant_id')
         });
     })
 
-    // delete the bear with this id (accessed at DELETE http://localhost:8080/api/bears/:bear_id)
+    // delete the restaurant with this id (accessed at DELETE http://localhost:8080/api/restaurants/:restaurant_id)
     .delete(function(req, res) {
         Restaurant.remove({
             restaurant_id: req.params.restaurant_id
