@@ -13,7 +13,7 @@ An application to demonstrate how Mongo, Express, and Node can be used together 
 * cd app
 * npm install  
 * node server.js
-* Verify the server is running @ http://localhost:8080/api/health
+* Verify the server is running @ http://localhost:8080/api/status
 
 # Example  
 * Access a resource @ http://localhost:8080/api/restaurants/40361322
