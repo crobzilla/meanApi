@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 
 var port = process.env.PORT || 8080;
 
-mongoose.connect('mongodb://localhost/meanApi'); // connect to our database
+mongoose.connect('mongodb://localhost/restaurantData'); // connect to our database
 
 // REGISTER OUR ROUTES -------------------------------
 // all of our routes will be prefixed with /api
